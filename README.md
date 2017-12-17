@@ -1,4 +1,12 @@
 CoreDisplayFixup
+
+
+Fix for LG Ultrafine 5K.
+change:
+static const uint8_t gmp100_repl[] = {0x80, 0x1A, 0x06, 0x00 };
+TO:
+static const uint8_t gmp100_repl[] = { 0x40, 0x42, 0x0F, 0x00 };
+
 ===================
 
 A [Lilu](https://github.com/vit9696/Lilu) plug-in which patches system essentials dynamically to enable 4K or greater resolutions output on certain graphics (See [here](https://github.com/Floris497/mac-pixel-clock-patch-V2/blob/master/README.md) for more details).
